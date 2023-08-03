@@ -89,7 +89,7 @@ public class OrdersTest extends BaseTest {
     }
 
     @Test
-    @Description("Неввторизованный пользователь не может создать заказ")
+    @Description("Неавторизованный пользователь может создать заказ")
     public void unauthorizedUserCanMakeOrder(){
         String ingredientId = ingredientsList.get(0).get_id();
         String[] ingredients = new String[]{ingredientId};
